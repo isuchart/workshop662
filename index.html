@@ -20,7 +20,7 @@
       <h4 class="my-3 text-left"><i class="fa-solid fa-address-card"></i> บันทึกข้อมูล</h4>
       
       <form id="data-form">
-        <div class="form-item d-none">
+        <div class="form-title d-none">
           <label for="ID">รหัส</label>
           <input type="text" class="form-control" id="ID" readonly />
         </div>
@@ -52,11 +52,11 @@
         </div>
         
         <div class="col-md-3 mb-2">
-          <label for="item">ห้อง</label
+          <label for="title">ห้อง</label
           >
           <select class="form-select"
-              name="item" 
-              id="item" required>
+              name="title" 
+              id="title" required>
               <option value="#" selected disabled>เลือกระดับชั้น</option>
               <!-- <option value="ม.4/10">ม.4/10</option> -->
               <option value="ม.4/8">ม.4/8</option>
@@ -70,8 +70,8 @@
       </div>
 
           <!-- <div class="col-md-3 mb-2">
-            <label for="item">เรื่อง</label>
-            <input type="text" class="form-control" id="item" name="item" placeholder="พิมพ์ชื่อกลุ่มฝึก" required>
+            <label for="title">เรื่อง</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="พิมพ์ชื่อกลุ่มฝึก" required>
           </div> -->
           <div class="col-md-3 mb-2">
             <label for="tambol">ตำบล</label>
@@ -221,7 +221,7 @@
         const obj = {
           action: "write",
           room: $("#room").val(),
-          item: $("#item").val(),
+          title: $("#title").val(),
           tambol: $("#tambol").val(),
           amphur: $("#amphur").val(),
           dname: $("#dname").val(),
