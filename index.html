@@ -92,8 +92,20 @@
             <input type="text" class="form-control" id="amphur" name="amphur" placeholder="พิมพ์ชื่ออำเภอที่ตั้ง" required>
           </div> -->
 
-          <h6 class="mt-2 text-primary"><i class="fa-solid fa-circle-user"></i> ข้อมูลผู้อำนวยการ</h6>
+          <h6 class="mt-2 text-primary"><i class="fa-solid fa-circle-user"></i> ข้อมูลของนักเรียน</h6>
           <hr>
+
+          <div class="col-md-3 mb-2">
+            <label for="prename">คำนำหน้าชื่อ</label>
+            <select class="form-select"
+                name="prename" 
+                id="prename" required>
+                <option value="#" selected disabled>เลือกคำนำหน้าชื่อ</option>
+                <option value="นาย">นาย</option>
+                <option value="นางสาว">นางสาว</option>
+            </select>
+        </div>
+
           <div class="col-md-3 mb-2">
             <label for="dname">ชื่อ-สกุล</label>
             <input type="text" class="form-control" id="dname" name="dname" placeholder="พิมพ์คำนำหน้า ชื่อ-สกุล ผอ." required>
@@ -233,7 +245,7 @@
           room: $("#room").val(),
           title: $("#title").val(),
           sheet: $("#sheet").val(),
-          // amphur: $("#amphur").val(),
+          prename: $("#prename").val(),
           dname: $("#dname").val(),
           dtel: $("#dtel").val(),
           d_email: $("#d_email").val(),
