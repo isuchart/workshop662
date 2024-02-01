@@ -29,16 +29,16 @@
           <h6 class="mt-2 text-primary"><i class="fa-solid fa-house"></i> ข้อมูลระดับชั้น</h6>
           <hr>
           <!-- <div class="col-md-3 mb-2">
-            <label for="school">ระดับชั้น</label>
-            <input type="text" class="form-control" id="school" name="school" placeholder="พิมพ์ชื่อสถานศึกษา" required>
+            <label for="room">ระดับชั้น</label>
+            <input type="text" class="form-control" id="room" name="room" placeholder="พิมพ์ชื่อสถานศึกษา" required>
           </div> -->
 
           <div class="col-md-3 mb-2">
-            <label for="school">ห้อง</label
+            <label for="room">ห้อง</label
             >
             <select class="form-select"
-                name="school" 
-                id="school" required>
+                name="room" 
+                id="room" required>
                 <option value="#" selected disabled>เลือกระดับชั้น</option>
                 <!-- <option value="ม.4/10">ม.4/10</option> -->
                 <option value="ม.4/8">ม.4/8</option>
@@ -52,7 +52,7 @@
         </div>
 
           <div class="col-md-3 mb-2">
-            <label for="group">ห้อง</label>
+            <label for="group">เรื่อง</label>
             <input type="text" class="form-control" id="group" name="group" placeholder="พิมพ์ชื่อกลุ่มฝึก" required>
           </div>
           <div class="col-md-3 mb-2">
@@ -202,7 +202,7 @@
       } else {
         const obj = {
           action: "write",
-          school: $("#school").val(),
+          room: $("#room").val(),
           group: $("#group").val(),
           tambol: $("#tambol").val(),
           amphur: $("#amphur").val(),
