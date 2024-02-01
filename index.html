@@ -20,7 +20,7 @@
       <h4 class="my-3 text-left"><i class="fa-solid fa-address-card"></i> บันทึกข้อมูล</h4>
       
       <form id="data-form">
-        <div class="form-group d-none">
+        <div class="form-item d-none">
           <label for="ID">รหัส</label>
           <input type="text" class="form-control" id="ID" readonly />
         </div>
@@ -50,11 +50,29 @@
                 <!-- <option value="ม.6/9">ม.6/9</option> -->
             </select>
         </div>
+        
+        <div class="col-md-3 mb-2">
+          <label for="room">ห้อง</label
+          >
+          <select class="form-select"
+              name="room" 
+              id="room" required>
+              <option value="#" selected disabled>เลือกระดับชั้น</option>
+              <!-- <option value="ม.4/10">ม.4/10</option> -->
+              <option value="ม.4/8">ม.4/8</option>
+              <option value="ม.4/10">ม.4/10</option>
+              <option value="ม.5/6">ม.5/6</option>
+              <option value="ม.5/7">ม.5/7</option>
+              <option value="ม.5/8">ม.5/8</option>
+              <option value="ม.5/9">ม.5/9</option>
+              <!-- <option value="ม.6/9">ม.6/9</option> -->
+          </select>
+      </div>
 
-          <div class="col-md-3 mb-2">
-            <label for="group">เรื่อง</label>
-            <input type="text" class="form-control" id="group" name="group" placeholder="พิมพ์ชื่อกลุ่มฝึก" required>
-          </div>
+          <!-- <div class="col-md-3 mb-2">
+            <label for="item">เรื่อง</label>
+            <input type="text" class="form-control" id="item" name="item" placeholder="พิมพ์ชื่อกลุ่มฝึก" required>
+          </div> -->
           <div class="col-md-3 mb-2">
             <label for="tambol">ตำบล</label>
             <input type="text" class="form-control" id="tambol" name="tambol" placeholder="พิมพ์ชื่อตำบลที่ตั้ง" required>
@@ -203,7 +221,7 @@
         const obj = {
           action: "write",
           room: $("#room").val(),
-          group: $("#group").val(),
+          item: $("#item").val(),
           tambol: $("#tambol").val(),
           amphur: $("#amphur").val(),
           dname: $("#dname").val(),
