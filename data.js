@@ -12,11 +12,27 @@ let room5 = '<option value="#" selected disabled>เลือกห้อง</op
     room5 += '<option value="8">8</option>'
     room5 += '<option value="9">9</option>'
 
+let topic44 = '<option value="#" selected disabled>เลือกเรื่อง</option>'
+    topic44 += '<option value="ฟังก์ชัน">ฟังก์ชัน</option>'
+    topic44 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>'
+    
+    let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>'
+    topic410 += '<option value="ฟังก์ชัน">ฟังก์ชัน</option>'
+    topic410 += '<option value="เรขาคณิตพื้นฐาน">ฟังก์ชัน</option>'
+    topic410 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>'
+    topic410 += '<option value="ฟังก์ชันExpo">เลขยกกำลัง</option>'
+    topic410 += '<option value="ภาคตัดกรวย">เลขยกกำลัง</option>'
+    
+let topic5 = '<option value="#" selected disabled>เลือกเรื่อง</option>'
+    topic5 += '<option value="หลักการนับ">หลักการนับ</option>'
+    topic5 += '<option value="ความน่าจะเป็น">ความน่าจะเป็น</option>'
+    
 $item1 = $("#item1")
 $item1.append(level)
 
 $item2 = $("#item2")
-$item1.on("change", function()  {
+// $item1.on("change", function()  {
+$item1.on("change", () => {
    let lv = $item1.val()
    $item2.empty();
    if(lv=="ม.4"){
@@ -24,6 +40,17 @@ $item1.on("change", function()  {
    }else{
        $item2.append(room5)
    }
-   
 })
 
+// $item3 = $("#item3")
+// $item1.on("change", function()  {
+//    let item = $item1.val()+$item2.val()
+
+//    $item3.empty();
+//    if(lv=="ม.4"){
+//        $item2.append(room4)
+//    }else{
+//        $item2.append(room5)
+//    }
+   
+// })
