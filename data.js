@@ -10,6 +10,6 @@ $item1 = $("#item1")
 $item1.append(level)
 
 $item2 = $("#item2")
-$item2.on("change", function()  {
+$item1.on("change", function()  {
    $item2.append(room)
 })
