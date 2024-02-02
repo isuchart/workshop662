@@ -133,9 +133,9 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
       spt1 = "";
       type1 = "";
       imgname1 = "";
+      img1.src = "";
       // spt2 = "";
       // type2 = "";
       // imgname2 = "";
-      // img1.src = "";
       // img2.src = "";
     }
