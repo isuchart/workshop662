@@ -50,7 +50,7 @@
         </div>
         
         <div class="col-md-3 mb-2">
-          <label for="title">เรื่อง</label>
+          <label for="title">เรื่อง(เล่มเอกสาร)</label>
           <select class="form-select"
               name="title" 
               id="title" required>
@@ -64,22 +64,8 @@
       </div>
 
       <div class="col-md-3 mb-2">
-        <label for="sheet">ใบงาน</label>
-        <select class="form-select"
-            name="sheet" 
-            id="sheet" required>
-            <option value="#" selected disabled>เลือกใบงาน</option>
-            <option value="ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ">ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ</option>
-            <option value="ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล">ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล</option>
-            <option value="ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล">ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล</option>
-            <option value="ฝึกทักษะเกี่ยวกับการเรียงสับเปลี่ยน">ฝึกทักษะเกี่ยวกับการเรียงสับเปลี่ยน</option>
-            <option value="เรียงสับเปลี่ยน(มีของติดกัน)">เรียงสับเปลี่ยน(มีของติดกัน)</option>
-            <option value="โจทย์ปัญหาการเรียงสับเปลี่ยน">โจทย์ปัญหาการเรียงสับเปลี่ยน</option>
-            <option value="โจทย์ปัญหาทบทวน">โจทย์ปัญหาทบทวน</option>
-            <option value="การจัดหมู่(Combination)">การจัดหมู่(Combination)</option>
-            <option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>
-            <!-- <option value=""></option> -->
-        </select>
+        <label for="sheet">หน้า</label>
+        <input type="text" class="form-control" id="sheet" name="sheet" placeholder="พิมพ์เลขหน้า, ปก=0 " required>
     </div>
 
           <h6 class="mt-2 text-primary"><i class="fa-solid fa-circle-user"></i> ข้อมูลของนักเรียน</h6>
