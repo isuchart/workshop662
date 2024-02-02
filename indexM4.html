@@ -29,16 +29,16 @@
           <h6 class="mt-2 text-primary"><i class="fa-solid fa-house"></i> ข้อมูลระดับชั้นและเรื่อง</h6>
           <hr>
           <!-- <div class="col-md-3 mb-2">
-            <label for="room">ระดับชั้น</label>
-            <input type="text" class="form-control" id="room" name="room" placeholder="พิมพ์ชื่อสถานศึกษา" required>
+            <label for="item1">ระดับชั้น</label>
+            <input type="text" class="form-control" id="item1" name="item1" placeholder="พิมพ์ชื่อสถานศึกษา" required>
           </div> -->
 
           <div class="col-md-3 mb-2">
-            <label for="room">ห้อง</label
+            <label for="item1">ห้อง</label
             >
             <select class="form-select"
-                name="room" 
-                id="room" required>
+                name="item1" 
+                id="item1" required>
                 <option value="#" selected disabled>เลือกระดับชั้น</option>
                 <option value="ม.4/8">ม.4/8</option>
                 <option value="ม.4/10">ม.4/10</option>
@@ -50,10 +50,10 @@
         </div>
         
         <div class="col-md-3 mb-2">
-          <label for="title">เรื่อง(เล่มเอกสาร)</label>
+          <label for="item2">เรื่อง(เล่มเอกสาร)</label>
           <select class="form-select"
-              name="title" 
-              id="title" required>
+              name="item2" 
+              id="item2" required>
               <option value="#" selected disabled>เลือกเรื่อง</option>
               <option value="ฟังก์ชัน">ฟังก์ชัน</option>
               <option value="เรขาคณิตวิเคราะห์พื้นฐาน">เรขาคณิตวิเคราะห์พื้นฐาน</option>
@@ -64,18 +64,18 @@
       </div>
 
       <div class="col-md-3 mb-2">
-        <label for="sheet">หน้า</label>
-        <input type="tel" class="form-control" id="sheet" name="sheet" placeholder="พิมพ์เลขหน้า, ปก=0 " required>
+        <label for="item3">หน้า</label>
+        <input type="tel" class="form-control" id="item3" name="item3" placeholder="พิมพ์เลขหน้า, ปก=0 " required>
     </div>
 
           <h6 class="mt-2 text-primary"><i class="fa-solid fa-circle-user"></i> ข้อมูลของนักเรียน</h6>
           <hr>
 
           <div class="col-md-3 mb-2">
-            <label for="prename">คำนำหน้าชื่อ</label>
+            <label for="item4">คำนำหน้าชื่อ</label>
             <select class="form-select"
-                name="prename" 
-                id="prename" required>
+                name="item4" 
+                id="item4" required>
                 <option value="#" selected disabled>เลือกคำนำหน้าชื่อ</option>
                 <option value="นาย">นาย</option>
                 <option value="นางสาว">นางสาว</option>
@@ -83,24 +83,24 @@
         </div>
 
           <div class="col-md-3 mb-2">
-            <label for="dname">ชื่อนักเรียน</label>
-            <input type="text" class="form-control" id="dname" name="dname" placeholder="พิมพ์ชื่อนักเรียน" required>
+            <label for="item5">ชื่อนักเรียน</label>
+            <input type="text" class="form-control" id="item5" name="item5" placeholder="พิมพ์ชื่อนักเรียน" required>
           </div>
           <div class="col-md-3 mb-2">
-            <label for="dtel">นามสกุล</label>
-            <input type="text" class="form-control" id="dtel" name="dtel" placeholder="นามสกุลนักเรียน" required>
+            <label for="item6">นามสกุล</label>
+            <input type="text" class="form-control" id="item6" name="item6" placeholder="นามสกุลนักเรียน" required>
           </div>
           <div class="col-md-3 mb-2">
-            <label for="d_email">เลขที่</label>
-            <input type="tel" class="form-control" id="d_email" name="d_email" placeholder="พิมพ์เลขที่" required>
+            <label for="item7">เลขที่</label>
+            <input type="tel" class="form-control" id="item7" name="item7" placeholder="พิมพ์เลขที่" required>
           </div>
 
           
           <h6 class="mt-2 text-primary"><i class="fa-solid fa-circle-user"></i> ข้อมูลผลงาน</h6>
           <hr>
           <div class="col-md-3 mb-2">
-            <label for="d_line">คะแนน</label>
-            <input type="tel" class="form-control" id="d_line" name="d_line" placeholder="พิมพ์คะแนน" required>
+            <label for="item8">คะแนน</label>
+            <input type="tel" class="form-control" id="item8" name="item8" placeholder="พิมพ์คะแนน" required>
           </div>
           <div class="mb-0 col-md-3">
             <label for="file" class="form-label">รูปหลักฐาน</label>
@@ -183,21 +183,21 @@
     btnsubmit.addEventListener("click", (event) => {
       event.preventDefault();
       startloading();
-      const inputname = document.querySelector("#dname").value;
+      const inputname = document.querySelector("#item5").value;
       // console.log(inputname)
       if (spt1 === "" || inputname === "") {
         popup("ตรวจสอบข้อมูลอีกครั้ง");
       } else {
         const obj = {
           action: "write",
-          room: $("#room").val(),
-          title: $("#title").val(),
-          sheet: $("#sheet").val(),
-          prename: $("#prename").val(),
-          dname: $("#dname").val(),
-          dtel: $("#dtel").val(),
-          d_email: $("#d_email").val(),
-          d_line: $("#d_line").val(),
+          item1: $("#item1").val(),
+          item2: $("#item2").val(),
+          item3: $("#item3").val(),
+          item4: $("#item4").val(),
+          item5: $("#item5").val(),
+          item6: $("#item6").val(),
+          item7: $("#item7").val(),
+          item8: $("#item8").val(),
           // tname: $("#tname").val(),
           // t_tel: $("#t_tel").val(),
           // t_email: $("#t_email").val(),
