@@ -11,6 +11,6 @@ $item1 = $("#item1")
 $item1.append(level)
 
 $item2 = $("#item2")
-$item2.addEventListener("change", () => {
+$item2.on("change", () => {
    $item2.append(room)
 })
