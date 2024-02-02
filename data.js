@@ -5,4 +5,4 @@ let room = '<option value="#" selected disabled>เลือกระดับ�
    //  room += '<option value="ม.5/7">ม.5/7</option>'
    //  room += '<option value="ม.5/8">ม.5/8</option>'
    //  room += '<option value="ม.5/9">ม.5/9</option>'
-$("#item1").html()
+$("#item1").html(room)
