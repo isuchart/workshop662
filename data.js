@@ -44,11 +44,11 @@ $item1.on("change", () => {
 
 $item3 = $("#item3")
 $item2.on("change", function()  {
-   let item = $item1.val()+$item2.val()
+   let it = $item1.val()+$item2.val()
    $item3.empty();
-   if(item=="ม.48"){
+   if(it=="ม.48"){
        $item3.append(topic48)
-   }else if(item=="ม.410"){
+   }else if(it=="ม.410"){
        $item3.append(topic410)
    }else {
        $item3.append(topic5)
