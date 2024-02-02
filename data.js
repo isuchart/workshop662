@@ -9,5 +9,8 @@ let room = '<option value="#" selected disabled>เลือกห้อง</opt
 
 $item1 = $("#item1")
 $item1.append(level)
+
 $item2 = $("#item2")
-$item2.append(room)
+$item2.addEventListener("change", () => {
+   $item2.append(room)
+})
