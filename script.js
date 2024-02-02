@@ -19,11 +19,11 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
       })
     const file1 = document.querySelector("#imgfile1");
     const img1 = document.querySelector("#img1");
-    // const file2 = document.querySelector("#imgfile2");
-    // const img2 = document.querySelector("#img2");
     let spt1 = "";
     let type1 = "";
     let imgname1 = "";
+    // const file2 = document.querySelector("#imgfile2");
+    // const img2 = document.querySelector("#img2");
     // let spt2 = "";
     // let type2 = "";
     // let imgname2 = "";
@@ -130,4 +130,12 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
         imageHeight: 80
       });
       $("#data-form")[0].reset()
+      spt1 = "";
+      type1 = "";
+      imgname1 = "";
+      // spt2 = "";
+      // type2 = "";
+      // imgname2 = "";
+      // img1.src = "";
+      // img2.src = "";
     }
