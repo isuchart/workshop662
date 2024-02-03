@@ -57,6 +57,38 @@ let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
     sectionProp += '</select>'
 
     
+let sectionFx = '<label for="item5">ใบงาน/หน้า</label>'
+    sectionFx += '<select class="form-select" name="item5" id="item5" required>'
+    sectionFx += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionFx += '<option value="SampleSpace">SampleSpace</option>'
+    sectionFx += '<option value="ผลคูณคาร์ทีเชียน">ผลคูณคาร์ทีเชียน</option>'
+    sectionFx += '<option value="ความสัมพันธ์1">ความสัมพันธ์1</option>'
+    sectionFx += '<option value="ความสัมพันธ์สู่ฟังก์ชัน">ความสัมพันธ์สู่ฟังก์ชัน</option>'
+    sectionFx += '<option value="โดเมน_เรนจ์">โดเมน_เรนจ์</option>'
+    sectionFx += '<option value="โดเมน_เรนจ์เศษส่วน">โดเมน_เรนจ์เศษส่วน</option>'
+    sectionFx += '<option value="โดเมน_เรนจ์ที่ติดรูท">โดเมน_เรนจ์ที่ติดรูท</option>'
+    sectionFx += '<option value="โดเมน_เรนต์ฟังก์ชันกำลังสอง">โดเมน_เรนต์ฟังก์ชันกำลังสอง</option>'
+    sectionFx += '<option value="โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์">โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์</option>'
+    sectionFx += '<option value="โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์">โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์</option>'
+    sectionFx += '<option value="ค่าของฟังก์ชัน_คู่อันดับ>ค่าของฟังก์ชัน_คู่อันดับ/option>'
+    sectionFx += '<option value="ค่าของฟังก์ชัน_StepFx>ค่าของฟังก์ชัน_StepFx/option>'
+    sectionFx += '<option value="ค่าของฟังก์ชัน_f(x)_g(x)>ค่าของฟังก์ชัน_f(x)_g(x)/option>'
+    sectionFx += '</select>'
+
+let sectionExpo = '<label for="item5">ใบงาน/หน้า</label>'
+    sectionExpo += '<select class="form-select" name="item5" id="item5" required>'
+    sectionExpo += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionExpo += '<option value="เลขยกกำลัง1">เลขยกกำลัง1</option>'
+    sectionExpo += '<option value="เลขยกกำลัง2">เลขยกกำลัง2</option>'
+    sectionExpo += '<option value="เลขยกกำลัง3">เลขยกกำลัง3</option>'
+    sectionExpo += '<option value="เลขยกกำลังที่มีเลขชี้กำลังเป็นจำนวนเต็ม">เลขยกกำลังที่มีเลขชี้กำลังเป็นจำนวนเต็ม</option>'
+    sectionExpo += '<option value="การบวกลบจำนวนที่ติดกรณฑ์">การบวกลบจำนวนที่ติดกรณฑ์</option>'
+    sectionExpo += '<option value="การคูณจำนวนที่ติดกรณฑ์">การคูณจำนวนที่ติดกรณฑ์</option>'
+    sectionExpo += '<option value="การหารจำนวนที่ติดกรณฑ์โดยสังยุค">การหารจำนวนที่ติดกรณฑ์โดยสังยุค</option>'
+    sectionExpo += '<option value="รากที่ n ของจำนวน">รากที่ n ของจำนวน</option>'
+    sectionExpo += '</select>'
+
+    
 let page = '<label for="item5">ใบงาน/หน้า</label>'
     page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขหน้า, ปก = 0" required />'
 
@@ -105,6 +137,7 @@ $item4.on("change", () => {
     var tp = $item3.val() //เรื่อง
     var ty = $item4.val() //ประเภท
     var sh = $item5.val() //ใบงาน/หน้า
+    let m4 = $item1.val() + $item2.val();
     console.log(lv,tp,ty)
     $iditem5.empty();
     if (lv == "ม.5" && tp == "หลักการนับ" && ty == "ใบงาน") {
@@ -112,5 +145,18 @@ $item4.on("change", () => {
     }
     if (lv == "ม.5" && tp == "ความน่าจะเป็น" && ty == "ใบงาน") {
         $iditem5.append(sectionProp);
+    }
+
+    if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
+        $iditem5.append(sectionFx);
+    }
+    if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
+    }
+    if (m4 == "ม.48" && tp == "เลขยกกำลัง" && ty == "ใบงาน") {
+        $iditem5.append(sectionExpo);
+    }
+    if (m4 == "ม.48" && tp == "เลขยกกำลัง" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
     }
 });
