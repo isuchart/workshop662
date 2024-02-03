@@ -95,7 +95,7 @@ $item2.on("change", () => {
 $item4 = $("#item4");
 $item4.append(kind);
 
-$iditem5 = $("#iditem5");
+$item5 = $("#item5");
 let lv = $item1.val() //ชั้น
 let cl = $item2.val() //ห้อง
 let tp = $item3.val() //เรื่อง
@@ -103,6 +103,7 @@ let ty = $item4.val() //ประเภท
 let sh = $item5.val() //ใบงาน/หน้า
 
 //เรื่องย่อย หรือ หน้า
+$iditem5 = $("#iditem5");
 $item4.on("change", () => {
     
     $iditem5.empty();
