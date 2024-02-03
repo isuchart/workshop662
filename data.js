@@ -43,7 +43,7 @@ $item1.on("change", () => {
 })
 
 $item3 = $("#item3")
-$item2.on("change", function()  {
+$item2.on("change", () => {
    let it = $item1.val()+$item2.val()
    $item3.empty();
    if(it=="ม.48"){
