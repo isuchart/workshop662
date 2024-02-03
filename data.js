@@ -44,6 +44,8 @@ let section = '<select class="form-select" name="item5" id="item5" required>'
     section += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     section += '</select>'
 
+let page = '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขที่" required />'
+
 //ชั้น
 $item1 = $("#item1");
 $item1.append(level);
@@ -81,6 +83,15 @@ $item4.append(kind);
 
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
-$iditem5.append(section);
+$item4.on("change", () => {
+    let it = $item4.val();
+    $iditem5.empty();
+    if (it == "ใบงาน") {
+        $iditem5.append(section);
+    } else {
+        $iditem5.append(page);
+    }
+  });
+
 
 
