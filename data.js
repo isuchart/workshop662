@@ -27,9 +27,22 @@ let topic5 = '<option value="#" selected disabled>เลือกเรื่อ
 topic5 += '<option value="หลักการนับ">หลักการนับ</option>';
 topic5 += '<option value="ความน่าจะเป็น">ความน่าจะเป็น</option>';
 
-let kind =  '<option value="#" selected disabled>เลือกเรื่อง</option>';
+let kind =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind += '<option value="ใบงาน">ใบงาน</option>';
 kind += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
+
+let section = '<select class="form-select" name="item5" id="item5" required>'
+    section += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    section += '<option value="ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ">ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ</option>'
+    section += '<option value="ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล">ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล</option>'
+    section += '<option value="ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล">ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล</option>'
+    section += '<option value="ฝึกทักษะเกี่ยวกับการเรียงสับเปลี่ยน">ฝึกทักษะเกี่ยวกับการเรียงสับเปลี่ยน</option>'
+    section += '<option value="เรียงสับเปลี่ยน(มีของติดกัน)">เรียงสับเปลี่ยน(มีของติดกัน)</option>'
+    section += '<option value="โจทย์ปัญหาการเรียงสับเปลี่ยน">โจทย์ปัญหาการเรียงสับเปลี่ยน</option>'
+    section += '<option value="โจทย์ปัญหาทบทวน">โจทย์ปัญหาทบทวน</option>'
+    section += '<option value="การจัดหมู่(Combination)">การจัดหมู่(Combination)</option>'
+    section += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
+    section += '</select>'
 
 //ชั้น
 $item1 = $("#item1");
@@ -62,6 +75,12 @@ $item2.on("change", () => {
   }
 });
 
-//ชั้น
+//ประเภท sheet หรือ เล่มเอกสาร
 $item4 = $("#item4");
 $item4.append(kind);
+
+//เรื่องย่อย หรือ หน้า
+$item5 = $("#item5");
+$item5.append(kind);
+
+
