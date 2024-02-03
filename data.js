@@ -71,7 +71,7 @@ let sectionFx = '<label for="item5">ใบงาน/หน้า</label>'
     sectionFx += '<option value="โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์">โดเมน_เรนต์ฟังก์ชันค่าสัมบูรณ์</option>'
     sectionFx += '<option value="ค่าของฟังก์ชัน_คู่อันดับ>ค่าของฟังก์ชัน_คู่อันดับ/option>'
     sectionFx += '<option value="ค่าของฟังก์ชัน_StepFx>ค่าของฟังก์ชัน_StepFx/option>'
-    sectionFx += '<option value="ค่าของฟังก์ชัน_f(x)_g(x)>ค่าของฟังก์ชัน_f(x)_g(x)/option>'
+    sectionFx += '<option value="ค่าของฟังก์ชัน_f(x)_g(x)>ค่าของฟังก์ชัน_f(x)_g(x)</option>'
     sectionFx += '</select>'
 
 let sectionExpo = '<label for="item5">ใบงาน/หน้า</label>'
