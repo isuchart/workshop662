@@ -46,7 +46,7 @@ let section = '<label for="item5">ใบงาน/หน้า</label>'
     section += '</select>'
 
 let page = '<label for="item5">ใบงาน/หน้า</label>'
-    page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขที่" required />'
+    page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขหน้า" required />'
 
 //ชั้น
 $item1 = $("#item1");
