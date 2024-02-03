@@ -107,8 +107,8 @@ $iditem5 = $("#iditem5");
 $item4.on("change", () => {
     
     $iditem5.empty();
-    if (lv == "ม.5" && ty == "ใบงาน" ) {
-        if(tp == "หลักการนับ"){
+    if (lv == "ม.5" && tp == "หลักการนับ") {
+        if(ty == "ใบงาน"){
             $iditem5.append(sectionCount);
         }else{
             $iditem5.append(sectionProp);
