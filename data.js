@@ -100,11 +100,11 @@ $item5 = $("#item5");
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
 $item4.on("change", () => {
-    let lv = $item1.val() //ชั้น
-    let cl = $item2.val() //ห้อง
-    let tp = $item3.val() //เรื่อง
-    let ty = $item4.val() //ประเภท
-    let sh = $item5.val() //ใบงาน/หน้า
+    var lv = $item1.val() //ชั้น
+    var cl = $item2.val() //ห้อง
+    var tp = $item3.val() //เรื่อง
+    var ty = $item4.val() //ประเภท
+    var sh = $item5.val() //ใบงาน/หน้า
     console.log(lv,tp,ty)
     $iditem5.empty();
     if (lv == "ม.5" && tp == "หลักการนับ" && ty == "ใบงาน") {
