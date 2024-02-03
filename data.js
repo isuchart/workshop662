@@ -31,7 +31,8 @@ let kind =  '<option value="#" selected disabled>เลือกประเภ�
 kind += '<option value="ใบงาน">ใบงาน</option>';
 kind += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
-let section = '<select class="form-select" name="item5" id="item5" required>'
+let section = '<label for="item5">ใบงาน/หน้า</label>'
+    section += '<select class="form-select" name="item5" id="item5" required>'
     section += '<option value="#" selected disabled>เลือกใบงาน</option>'
     section += '<option value="ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ">ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ</option>'
     section += '<option value="ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล">ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล</option>'
@@ -44,7 +45,8 @@ let section = '<select class="form-select" name="item5" id="item5" required>'
     section += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     section += '</select>'
 
-let page = '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขที่" required />'
+let page = '<label for="item5">ใบงาน/หน้า</label>'
+    page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขที่" required />'
 
 //ชั้น
 $item1 = $("#item1");
