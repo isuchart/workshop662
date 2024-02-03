@@ -80,7 +80,7 @@ $item4 = $("#item4");
 $item4.append(kind);
 
 //เรื่องย่อย หรือ หน้า
-$item5 = $("#item5");
-$item5.append(kind);
+$iditem5 = $("#iditem5");
+$iditem5.append(kind);
 
 
