@@ -81,6 +81,6 @@ $item4.append(kind);
 
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
-$iditem5.append(kind);
+$iditem5.append(section);
 
 
