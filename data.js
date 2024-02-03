@@ -27,9 +27,15 @@ let topic5 = '<option value="#" selected disabled>เลือกเรื่อ
 topic5 += '<option value="หลักการนับ">หลักการนับ</option>';
 topic5 += '<option value="ความน่าจะเป็น">ความน่าจะเป็น</option>';
 
+let kind =  '<option value="#" selected disabled>เลือกเรื่อง</option>';
+kind += '<option value="ใบงาน">ใบงาน</option>';
+kind += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
+
+//ชั้น
 $item1 = $("#item1");
 $item1.append(level);
 
+//ห้อง
 $item2 = $("#item2");
 // $item1.on("change", function()  {
 $item1.on("change", () => {
@@ -42,6 +48,7 @@ $item1.on("change", () => {
   }
 });
 
+// เรื่อง
 $item3 = $("#item3");
 $item2.on("change", () => {
   let it = $item1.val() + $item2.val();
@@ -54,3 +61,7 @@ $item2.on("change", () => {
     $item3.append(topic5);
   }
 });
+
+//ชั้น
+$item4 = $("#item4");
+$item4.append(kind);
