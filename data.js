@@ -18,7 +18,7 @@ topic48 += '<option value="เลขยกกำลัง">เลขยกกำ
 
 let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
 topic410 += '<option value="ฟังก์ชัน">ฟังก์ชัน</option>';
-topic410 += '<option value="เรขาคณิตพื้นฐาน">เรขาคณิตพื้นฐาน</option>';
+topic410 += '<option value="เรขาคณิตวิเคราะห์พื้นฐาน">เรขาคณิตพื้นฐาน</option>';
 topic410 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
 topic410 += '<option value="ภาคตัดกรวย">ภาคตัดกรวย</option>';
@@ -60,7 +60,6 @@ let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
 let sectionFx = '<label for="item5">ใบงาน/หน้า</label>'
     sectionFx += '<select class="form-select" name="item5" id="item5" required>'
     sectionFx += '<option value="#" selected disabled>เลือกใบงาน</option>'
-    sectionFx += '<option value="SampleSpace">SampleSpace</option>'
     sectionFx += '<option value="ผลคูณคาร์ทีเชียน">ผลคูณคาร์ทีเชียน</option>'
     sectionFx += '<option value="ความสัมพันธ์1">ความสัมพันธ์1</option>'
     sectionFx += '<option value="ความสัมพันธ์สู่ฟังก์ชัน">ความสัมพันธ์สู่ฟังก์ชัน</option>'
@@ -159,4 +158,18 @@ $item4.on("change", () => {
     if (m4 == "ม.48" && tp == "เลขยกกำลัง" && ty == "เล่มเอกสาร") {
         $iditem5.append(page);
     }
+
+    if (m4 == "ม.410" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
+        $iditem5.append(sectionFx);
+    }
+    if (m4 == "ม.410" && tp == "ฟังก์ชัน" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
+    }
+    if (m4 == "ม.410" && tp == "เลขยกกำลัง" && ty == "ใบงาน") {
+        $iditem5.append(sectionExpo);
+    }
+    if (m4 == "ม.410" && tp == "เลขยกกำลัง" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
+    }
+
 });
