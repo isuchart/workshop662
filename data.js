@@ -105,6 +105,7 @@ let sh = $item5.val() //ใบงาน/หน้า
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
 $item4.on("change", () => {
+    console.log(lv,tp,ty)
 $iditem5.empty();
     if (lv == "ม.5" && tp == "หลักการนับ" && ty == "ใบงาน") {
         $iditem5.append(sectionCount);
