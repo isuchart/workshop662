@@ -44,7 +44,19 @@ let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<option value="การจัดหมู่(Combination)">การจัดหมู่(Combination)</option>'
     sectionCount += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     sectionCount += '</select>'
+    
+let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
+    sectionProp += '<select class="form-select" name="item5" id="item5" required>'
+    sectionProp += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionProp += '<option value="SampleSpace">SampleSpace</option>'
+    sectionProp += '<option value="สื่อลูกเต๋า">สื่อลูกเต๋า</option>'
+    sectionProp += '<option value="ไพ่ 1 สำรับ">ไพ่ 1 สำรับ</option>'
+    sectionProp += '<option value="การสุ่มหยิบสลาก">การสุ่มหยิบสลาก</option>'
+    sectionProp += '<option value="การสุ่มหยิบของ 2 สิ่ง">การสุ่มหยิบของ 2 สิ่ง</option>'
+    sectionProp += '<option value="การสุ่มหยิบของ 3 สิ่ง">การสุ่มหยิบของ 3 สิ่ง</option>'
+    sectionProp += '</select>'
 
+    
 let page = '<label for="item5">ใบงาน/หน้า</label>'
     page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขหน้า, ปก = 0" required />'
 
@@ -83,13 +95,23 @@ $item2.on("change", () => {
 $item4 = $("#item4");
 $item4.append(kind);
 
+let lv = $item1.val() //ชั้น
+let cl = $item2.val() //ห้อง
+let tp = $item3.val() //เรื่อง
+let ty = $item4.val() //ประเภท
+let sh = $item5.val() //ใบงาน/หน้า
+
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
 $item4.on("change", () => {
-    let it = $item4.val();
+    
     $iditem5.empty();
-    if (it == "ใบงาน") {
-        $iditem5.append(sectionCount);
+    if (lv == "ม.5") {
+        if(tp == "หลักการนับ"){
+            $iditem5.append(sectionCount);
+        }else{
+            $iditem5.append(sectionProp);
+        }
     } else {
         $iditem5.append(page);
     }
