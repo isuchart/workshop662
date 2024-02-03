@@ -73,6 +73,8 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
           item6: $("#item6").val(),
           item7: $("#item7").val(),
           item8: $("#item8").val(),
+          item9: $("#item9").val(),
+          item10: $("#item10").val(),
           // tname: $("#tname").val(),
           // t_tel: $("#t_tel").val(),
           // t_email: $("#t_email").val(),
