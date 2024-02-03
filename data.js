@@ -105,18 +105,8 @@ let sh = $item5.val() //ใบงาน/หน้า
 //เรื่องย่อย หรือ หน้า
 $iditem5 = $("#iditem5");
 $item4.on("change", () => {
-    
-    $iditem5.empty();
-    if (lv == "ม.5" && tp == "หลักการนับ") {
-        if(ty == "ใบงาน"){
-            $iditem5.append(sectionCount);
-        }else{
-            $iditem5.append(sectionProp);
-        }
-    } else {
-        $iditem5.append(page);
+$iditem5.empty();
+    if (lv == "ม.5" && tp == "หลักการนับ" && ty == "ใบงาน") {
+        $iditem5.append(sectionCount);
     }
-  });
-
-
-
+});
