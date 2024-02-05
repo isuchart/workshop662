@@ -60,6 +60,14 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
       startloading();
       const inputname = document.querySelector("#item5").value;
       // console.log(inputname)
+
+      let section 
+      if ($("#item4").val() == "เล่มเอกสาร"){
+        section = "หน้า "+$("#item5").val()
+      }else{
+        section = $("#item5").val()
+      }
+      
       if (spt1 === "" || inputname === "") {
         popup("ตรวจสอบข้อมูลอีกครั้ง");
       } else {
@@ -69,7 +77,7 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
           item2: $("#item2").val(),
           item3: $("#item3").val(),
           item4: $("#item4").val(),
-          item5: "หน้า "+$("#item5").val(),
+          item5: section,
           item6: $("#item6").val(),
           item7: $("#item7").val(),
           item8: $("#item8").val(),
