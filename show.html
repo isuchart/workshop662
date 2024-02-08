@@ -50,10 +50,10 @@
 
       function showData(data){
          data.forEach(val => {
-            $showData.append(`<tr><td>${val[1]}</td><td>${val[5]}</td><td>${val[6]}</td></tr>`)
+            $showData.append(`<tr><td>${val[6]}</td><td>${val[7]}</td><td>${val[8]}</td></tr>`)
          });
       }
-
+      
       fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
          .then(respons => respons.json())
          .then(data => showData(data))
