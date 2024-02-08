@@ -28,9 +28,10 @@
       <table class="table table-striped">
          <thead>
             <tr>
-               <th>สถานศึกษา</th>
-               <th>ผู้บริการ</th>
-               <th>เบอร์โทร</th>
+               <th>เรื่อง</th>
+               <th>ประเภท</th>
+               <th>ใบงาน/หน้า</th>
+               <th>คะแนน</th>
                <!-- <th>อีเมล</th> -->
                <!-- <th>position</th>
                <th>add</th> -->
@@ -45,18 +46,22 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
    <script>
-      var $showData = $("#showData")
-   
-
-      function showData(data){
-         data.forEach(val => {
-            $showData.append(`<tr><td>${val[6]}</td><td>${val[7]}</td><td>${val[8]}</td></tr>`)
-         });
-      }
       
+      var $showData = $("#showData");
+
+         function showData(data) {
+            data.forEach(val => {
+               // แก้เป็นเช็คค่าของ val[7] ว่าเท่ากับ 'พลอยแหวน' หรือไม่
+               if (val[7] === 'พิมตะวัน' && val[8] === 'แป้นอ่อง' ) {
+                  $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
+               }
+            });
+}
+
       fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
          .then(respons => respons.json())
          .then(data => showData(data))
    </script>
 </body>
 </html>
+<!-- numbers.filter(number => number > 3) -->
