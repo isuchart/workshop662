@@ -25,7 +25,23 @@
 </head>
 <body>
    <div class="container">
-      <table class="table table-striped">
+      <h4 class="my-3 text-left">
+         <i class="fa-solid fa-address-card"></i> ค้นหาข้อมูล
+       </h4>
+   <form>
+      <div class="mb-3">
+        <label for="stdName" class="form-label">ชื่อนักเรียน</label>
+        <input type="text" class="form-control" id="stdName" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="stdSurname" class="form-label">นามสกุลนักเรียน</label>
+        <input type="text" class="form-control" id="stdSurname">
+      </div>
+      <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+    </form>
+
+
+      <table class="table table-striped d-none" id="stdTable">
          <thead>
             <tr>
                <th>เรื่อง</th>
@@ -48,6 +64,7 @@
    <script>
       
       var $showData = $("#showData");
+      var $stdTable = $("#stdTable")
 
          function showData(data) {
             data.forEach(val => {
@@ -57,11 +74,15 @@
                }
             });
 }
-
+   const btnsubmit = document.querySelector("#btnSubmit");
+   btnsubmit.addEventListener("click", (event) => {
+      event.preventDefault()
+      // alert("hhhh")
       fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
-         .then(respons => respons.json())
-         .then(data => showData(data))
+      .then(respons => respons.json())
+      .then(data => showData(data))
+      $("#stdTable").addClass("d-block")
+   })
    </script>
 </body>
 </html>
-<!-- numbers.filter(number => number > 3) -->
