@@ -28,7 +28,7 @@
       <h4 class="my-3 text-left">
          <i class="fa-solid fa-address-card"></i> ค้นหาข้อมูล
        </h4>
-   <form>
+   <form id="data-form">
       <div class="mb-3">
         <label for="stdName" class="form-label">ชื่อนักเรียน</label>
         <input type="text" class="form-control" id="stdName" aria-describedby="emailHelp">
@@ -41,7 +41,7 @@
     </form>
 
 
-      <table class="table table-striped d-none" id="stdTable">
+      <table class="table table-striped d-block" id="stdTable">
          <thead>
             <tr>
                <th>เรื่อง</th>
@@ -63,26 +63,84 @@
 
    <script>
       
-      var $showData = $("#showData");
-      var $stdTable = $("#stdTable")
+//       var $showData = $("#showData");
+//       var $stdTable = $("#stdTable")
 
-         function showData(data) {
-            data.forEach(val => {
-               // แก้เป็นเช็คค่าของ val[7] ว่าเท่ากับ 'พลอยแหวน' หรือไม่
-               if (val[7] === 'พิมตะวัน' && val[8] === 'แป้นอ่อง' ) {
-                  $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
-               }
-            });
+//          function showData(data) {
+//             data.forEach(val => {
+//                // แก้เป็นเช็คค่าของ val[7] ว่าเท่ากับ 'พลอยแหวน' หรือไม่
+//                if (val[7] === 'พิมตะวัน' && val[8] === 'แป้นอ่อง' ) {
+//                   $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
+//                }
+//             });
+// }
+//    const btnsubmit = document.querySelector("#btnSubmit");
+//    btnsubmit.addEventListener("click", (event) => {
+//       event.preventDefault()
+//       // alert("hhhh")
+//       fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
+//       .then(respons => respons.json())
+//       .then(data => showData(data))
+//       $("#stdTable").addClass("d-block")
+//    })
+
+// var $showData = $("#showData");
+// var $stdTable = $("#stdTable");
+// var $stdName = $("#stdName").val();
+// var $stdSurname = $("#stdSurname").val();
+
+// function showData(data) {
+//    $showData.empty(); // Clear existing data
+//    data.forEach(val => {
+//       // แก้เป็นเช็คค่าของ val[7] ว่าเท่ากับ 'พลอยแหวน' หรือไม่
+//       if (val[7] === $stdName && val[8] === $stdSurname) {
+//          $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
+//       }
+//    });
+// }
+
+// const btnsubmit = document.querySelector("#btnSubmit");
+// btnsubmit.addEventListener("click", (event) => {
+//    event.preventDefault();
+//    alert($stdName)
+//    fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
+//    .then(response => response.json())
+//    .then(data => {
+//       showData(data);
+//    })
+//    .catch(error => console.error('Error fetching data:', error));
+//    $("#stdTable").addClass("d-block");
+// });
+
+const $showData = $("#showData");
+
+function showData(data) {
+   const $stdName = $("#stdName").val(); // อ่านค่า stdName ในขณะที่เรียกใช้ฟังก์ชั่น
+   const $stdSurname = $("#stdSurname").val(); // อ่านค่า stdSurname ในขณะที่เรียกใช้ฟังก์ชั่น
+   $showData.empty(); // Clear existing data
+   data.forEach(val => {
+      // เช็คค่าของ val[7] และ val[8] ว่าเท่ากับค่าที่อ่านจาก input fields หรือไม่
+      if (val[7] === $stdName && val[8] === $stdSurname) {
+         $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
+      }
+   });
 }
-   const btnsubmit = document.querySelector("#btnSubmit");
-   btnsubmit.addEventListener("click", (event) => {
-      event.preventDefault()
-      // alert("hhhh")
-      fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
-      .then(respons => respons.json())
-      .then(data => showData(data))
-      $("#stdTable").addClass("d-block")
+
+const btnsubmit = document.querySelector("#btnSubmit");
+btnsubmit.addEventListener("click", (event) => {
+   event.preventDefault();
+   fetch('https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec')
+   .then(response => response.json())
+   .then(data => {
+      showData(data);
    })
+   .catch(error => console.error('Error fetching data:', error));
+   $("#stdTable").addClass("d-block");
+   // $("#data-form")[0].reset()
+   // $("#stdName").val("")
+});
+
+
    </script>
 </body>
 </html>
