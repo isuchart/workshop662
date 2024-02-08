@@ -42,6 +42,7 @@ let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<option value="โจทย์ปัญหาการเรียงสับเปลี่ยน">โจทย์ปัญหาการเรียงสับเปลี่ยน</option>'
     sectionCount += '<option value="โจทย์ปัญหาทบทวน">โจทย์ปัญหาทบทวน</option>'
     sectionCount += '<option value="การจัดหมู่(Combination)">การจัดหมู่(Combination)</option>'
+    sectionCount += '<option value="การจัดหมู่(Combination)">ฝึกทักษะเกี่ยวกับการจัดหมู่ของสิ่งของ</option>'
     sectionCount += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     sectionCount += '</select>'
     
