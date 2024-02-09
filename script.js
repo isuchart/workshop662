@@ -7,6 +7,7 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
         // Do something with the data
         // console.log(json);
         // console.log(json[0][1]);
+        // stoploading();
       })
     //v
     //ดร.วิเชียร
@@ -105,6 +106,7 @@ const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_
             popup(data);
             console.log(data);
             // readdata();
+            stoploading();
           });
         // $("#btn-close").click();
         // location.reload();
