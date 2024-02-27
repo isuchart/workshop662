@@ -181,5 +181,8 @@ $item4.on("change", () => {
     if (m4 == "ม.410" && tp == "ภาคตัดกรวย" && ty == "เล่มเอกสาร") {
         $iditem5.append(page);
     }
+    if (m4 == "ม.410" && tp == "ฟังก์ชันExpo" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
+    }
 
 });
