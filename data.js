@@ -3,29 +3,29 @@ level += '<option value="ม.4">ม.4</option>';
 level += '<option value="ม.5">ม.5</option>';
 
 let room4 = '<option value="#" selected disabled>เลือกห้อง</option>';
-room4 += '<option value="8">8</option>';
+//room4 += '<option value="8">8</option>';
 room4 += '<option value="10">10</option>';
 
 let room5 = '<option value="#" selected disabled>เลือกห้อง</option>';
-room5 += '<option value="6">6</option>';
-room5 += '<option value="7">7</option>';
-room5 += '<option value="8">8</option>';
-room5 += '<option value="9">9</option>';
+room5 += '<option value="4">4</option>';
+room5 += '<option value="10">10</option>';
+//room5 += '<option value="8">8</option>';
+//room5 += '<option value="9">9</option>';
 
 let topic48 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic48 += '<option value="ฟังก์ชัน">ฟังก์ชัน</option>';
+topic48 += '<option value="ฟังก์ชัน">set</option>';
 topic48 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 
 let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic410 += '<option value="ฟังก์ชัน">ฟังก์ชัน</option>';
-topic410 += '<option value="เรขาคณิตวิเคราะห์พื้นฐาน">เรขาคณิตพื้นฐาน</option>';
-topic410 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
-topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
-topic410 += '<option value="ภาคตัดกรวย">ภาคตัดกรวย</option>';
+topic410 += '<option value="set">set</option>';
+topic410 += '<option value="จำนวนจริง">จำนวนจริง</option>';
+topic410 += '<option value="ตรรกศาสตร์">ตรรกศาสตร์</option>';
+//topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
+//topic410 += '<option value="ภาคตัดกรวย">ภาคตัดกรวย</option>';
 
 let topic5 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic5 += '<option value="หลักการนับ">หลักการนับ</option>';
-topic5 += '<option value="ความน่าจะเป็น">ความน่าจะเป็น</option>';
+topic5 += '<option value="ลำดับ">หลักการนับ</option>';
+topic5 += '<option value="อนุกรม">ความน่าจะเป็น</option>';
 
 let kind =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind += '<option value="ใบงาน">ใบงาน</option>';
