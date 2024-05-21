@@ -179,6 +179,10 @@ $item4.on("change", () => {
     if (m4 == "ม.410" && tp == "เซต" && ty == "ใบงาน") {
         $iditem5.append(sectionSet);
     }
+
+    if (m4 == "ม.410" && tp == "เซต" && ty == "เล่มเอกสาร") {
+        $iditem5.append(page);
+    }
     
     if (m4 == "ม.410" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
         $iditem5.append(sectionFx);
