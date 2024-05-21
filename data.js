@@ -17,7 +17,7 @@ topic48 += '<option value="ฟังก์ชัน">set</option>';
 topic48 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 
 let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic410 += '<option value="set">set</option>';
+topic410 += '<option value="เซต">เซต</option>';
 topic410 += '<option value="จำนวนจริง">จำนวนจริง</option>';
 topic410 += '<option value="ตรรกศาสตร์">ตรรกศาสตร์</option>';
 //topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
@@ -176,6 +176,10 @@ $item4.on("change", () => {
         $iditem5.append(page);
     }
 
+    if (m4 == "ม.410" && tp == "เซต" && ty == "ใบงาน") {
+        $iditem5.append(sectionSet);
+    }
+    
     if (m4 == "ม.410" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
         $iditem5.append(sectionFx);
     }
