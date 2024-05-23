@@ -27,9 +27,13 @@ let topic5 = '<option value="#" selected disabled>เลือกเรื่อ
 topic5 += '<option value="ลำดับ">หลักการนับ</option>';
 topic5 += '<option value="อนุกรม">ความน่าจะเป็น</option>';
 
-let kind =  '<option value="#" selected disabled>เลือกประเภท</option>';
+let kind4 =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind += '<option value="ใบงาน">ใบงาน</option>';
 kind += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
+
+let kind5 =  '<option value="#" selected disabled>เลือกประเภท</option>';
+kind += '<option value="ใบงาน">ใบงาน</option>';
+//kind += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
 let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<select class="form-select" name="item5" id="item5" required>'
@@ -141,7 +145,13 @@ $item2.on("change", () => {
 
 //ประเภท sheet หรือ เล่มเอกสาร
 $item4 = $("#item4");
-$item4.append(kind);
+let lv = $item1.val();
+if (lv == "ม.4" ){
+    $item4.append(kind4);
+}else {
+    $item4.append(kind4);
+}
+
 
 $item5 = $("#item5");
 
