@@ -149,7 +149,7 @@ let lv = $item1.val();
 if (lv == "ม.4" ){
     $item4.append(kind4);
 }else {
-    $item4.append(kind4);
+    $item4.append(kind5);
 }
 
 
