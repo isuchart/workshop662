@@ -36,8 +36,8 @@ kind4 += '<option value="ใบงาน">ใบงาน</option>';
 kind4 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
 let kind5 =  '<option value="#" selected disabled>เลือกประเภท</option>';
-kind4 += '<option value="ใบงาน">ใบงาน</option>';
-//kind4 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
+kind5 += '<option value="ใบงาน">ใบงาน</option>';
+//kind5 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
 let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<select class="form-select" name="item5" id="item5" required>'
