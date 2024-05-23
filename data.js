@@ -148,8 +148,8 @@ $item2.on("change", () => {
 });
 
 //ประเภท sheet หรือ เล่มเอกสาร
-$item4 = $("#item4");
 let lv = $item1.val();
+$item4 = $("#item4");
 if (lv == "ม.4" ){
     $item4.append(kind4);
 }else {
