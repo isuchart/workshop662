@@ -83,7 +83,8 @@ function showData(data) {
          $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
          stdScore += val[11]
       }
-      console.log(stdScore)
+      // console.log(stdScore)
+      $showData.append(`<tr><td></td><td></td><td>รวมคะแนน</td><td>${stdScore}</td></tr>`);
    });
 }
 
