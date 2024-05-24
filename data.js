@@ -53,7 +53,7 @@ let sectionSequence = '<label for="item5">ใบงาน/หน้า</label>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1">แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1</option>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2">แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2</option>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3">แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3</option>'
-    sectionSequence += '<option value="แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3">แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 2.4 ลำดับเลขคณิต4">แบบฝึกหัดที่ 2.4 ลำดับเลขคณิต4</option>'
     sectionSequence += '</select>'
     
 let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
