@@ -53,6 +53,16 @@ let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<option value="การจัดหมู่(Combination)">ฝึกทักษะเกี่ยวกับการจัดหมู่ของสิ่งของ</option>'
     sectionCount += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     sectionCount += '</select>'
+
+let sectionSequence = '<label for="item5">ใบงาน/หน้า</label>'
+    sectionSequence += '<select class="form-select" name="item5" id="item5" required>'
+    sectionSequence += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 1 ความหมายชองลำดับ">แบบฝึกหัดที่ 1 ความหมายชองลำดับ</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1">แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2">แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3">แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3</option>'
+    sectionSequence += '<option value="แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3">แบบฝึกหัดที่ 2.3 ลำดับเลขคณิต3</option>'
+    sectionSequence += '</select>'
     
 let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
     sectionProp += '<select class="form-select" name="item5" id="item5" required>'
@@ -174,6 +184,9 @@ $item4.on("change", () => {
         $iditem5.append(sectionCount);
     }
     if (lv == "ม.5" && tp == "ความน่าจะเป็น" && ty == "ใบงาน") {
+        $iditem5.append(sectionProp);
+    }
+    if (lv == "ม.5" && tp == "อนุกรม" && ty == "ใบงาน") {
         $iditem5.append(sectionProp);
     }
 
