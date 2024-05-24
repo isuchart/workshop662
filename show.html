@@ -74,13 +74,16 @@ function showData(data) {
    const $stdName = $("#stdName").val(); // อ่านค่า stdName ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdSurname = $("#stdSurname").val(); // อ่านค่า stdSurname ในขณะที่เรียกใช้ฟังก์ชั่น
    $showData.empty(); // Clear existing data
+   let stdScore = 0
    data.forEach(val => {
       // เช็คค่าของ val[7] และ val[8] ว่าเท่ากับค่าที่อ่านจาก input fields หรือไม่
       // if (val[7] === $stdName && val[8] === $stdSurname) {
       // เช็คค่าของ val[10] ว่าเท่ากับค่าที่อ่านจาก input fields หรือไม่
       if (val[10] == $stdId) {
          $showData.append(`<tr><td>${val[3]}</td><td>${val[4]}</td><td>${val[5]}</td><td>${val[11]}</td></tr>`);
+         stdScore += val[11]
       }
+      console.log(stdScore)
    });
 }
 
