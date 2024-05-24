@@ -186,7 +186,7 @@ $item4.on("change", () => {
     if (lv == "ม.5" && tp == "ความน่าจะเป็น" && ty == "ใบงาน") {
         $iditem5.append(sectionProp);
     }
-    if (lv == "ม.5" && tp == "อนุกรม" && ty == "ใบงาน") {
+    if (lv == "ม.5" && tp == "ลำดับ" && ty == "ใบงาน") {
         $iditem5.append(sectionSequence);
     }
 
