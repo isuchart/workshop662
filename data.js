@@ -160,7 +160,7 @@ $item4.on("change", () => {
         $iditem5.append(sectionProp);
     }
     if (lv == "ม.5" && tp == "อนุกรม" && ty == "ใบงาน") {
-        $iditem5.append(sectionProp);
+        $iditem5.append(sectionSequence);
     }
 
     if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
