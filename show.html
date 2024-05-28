@@ -75,8 +75,9 @@ function showData(data) {
    const $stdId = $("#stdId").val(); // อ่านค่า stdId ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdName = $("#stdName").val(); // อ่านค่า stdName ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdSurname = $("#stdSurname").val(); // อ่านค่า stdSurname ในขณะที่เรียกใช้ฟังก์ชั่น
-   $("#data-form").addClass("d-none")
+   $("#data-form").addClass("d-none") // ปิดการแสดงผล Form
    $showData.empty(); // Clear existing data
+   $("stdShow").html('55555555')
    let stdScore = 0
    data.forEach(val => {
       // เช็คค่าของ val[7] และ val[8] ว่าเท่ากับค่าที่อ่านจาก input fields หรือไม่
