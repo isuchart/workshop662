@@ -162,6 +162,7 @@ $item2.on("change", () => {
 $item4 = $("#item4");
 $item3.on("change", () => {
     let lv = $item1.val();
+    console.log(lv)
     $item4.empty();
     if (lv == "ม.4" ){
         $item4.append(kind4);
