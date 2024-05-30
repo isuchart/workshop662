@@ -122,9 +122,18 @@ let sectionSet = '<label for="item5">ใบงาน/หน้า</label>'
     //sectionSet += '<option value="รากที่ n ของจำนวน">รากที่ n ของจำนวน</option>'
     sectionSet += '</select>'
 
-    
 let page = '<label for="item5">ใบงาน/หน้า</label>'
     page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขหน้า, ปก = 0" required />'
+
+let pageSet = '<label for="item5">ใบงาน/หน้า</label>'
+    pageSet += '<select class="form-select" name="item5" id="item5" required>'
+    pageSet += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    pageSet += '<option value="หน้าปก">หน้าปก</option>'
+    pageSet += '<option value="หน้า 3">หน้า 3</option>'
+    pageSet += '<option value="หน้า 5">หน้า 5</option>'
+    pageSet += '<option value="หน้า 7">หน้า 7</option>'
+    pageSet += '<option value="หน้า 11">หน้า 11</option>'
+    pageSet += '</select>'
 
 //ชั้น
 $item1 = $("#item1");
