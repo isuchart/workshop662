@@ -78,12 +78,15 @@ function showData(data) {
    const $stdId = $("#stdId").val(); // อ่านค่า stdId ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdName = $("#stdName").val(); // อ่านค่า stdName ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdSurname = $("#stdSurname").val(); // อ่านค่า stdSurname ในขณะที่เรียกใช้ฟังก์ชั่น
+   
    data.find(element => {
       if (element[10] == $stdId){
+         console.log(element[10],$stdId)
          let stdShow = element[10] + " " + element[6]+element[7]+ " " + element[8]
          $("#stdShow").html(stdShow)
       }
    })
+   
    $("#data-form").addClass("d-none") // ปิดการแสดงผล Form
    $showData.empty(); // Clear existing data
    let stdScore = 0
