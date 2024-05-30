@@ -127,7 +127,7 @@ let page = '<label for="item5">ใบงาน/หน้า</label>'
 
 let pageSet = '<label for="item5">ใบงาน/หน้า</label>'
     pageSet += '<select class="form-select" name="item5" id="item5" required>'
-    pageSet += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    pageSet += '<option value="#" selected disabled>เลือกหน้า</option>'
     pageSet += '<option value="หน้าปก">หน้าปก</option>'
     pageSet += '<option value="หน้า 3">หน้า 3</option>'
     pageSet += '<option value="หน้า 5">หน้า 5</option>'
