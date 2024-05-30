@@ -208,7 +208,7 @@ $item4.on("change", () => {
         $iditem5.append(sectionFx);
     }
     if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "เล่มเอกสาร") {
-        $iditem5.append(page);
+        $iditem5.append(pageSet);
     }
     if (m4 == "ม.48" && tp == "เลขยกกำลัง" && ty == "ใบงาน") {
         $iditem5.append(sectionExpo);
