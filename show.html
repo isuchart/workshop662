@@ -77,7 +77,7 @@ function showData(data) {
    const $stdId = $("#stdId").val(); // อ่านค่า stdId ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdName = $("#stdName").val(); // อ่านค่า stdName ในขณะที่เรียกใช้ฟังก์ชั่น
    const $stdSurname = $("#stdSurname").val(); // อ่านค่า stdSurname ในขณะที่เรียกใช้ฟังก์ชั่น
-   let stdShow = data[0][10]
+   let stdShow = data[0][10] + " " + data[0][6]+data[0][7]+ " " + data[0][8]
    $("#data-form").addClass("d-none") // ปิดการแสดงผล Form
    $("#stdShow").html(stdShow)
    $showData.empty(); // Clear existing data
