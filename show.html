@@ -81,7 +81,7 @@ function showData(data) {
    data.find(element => {
       if (element[10] == $stdId){
          console.log(element[10],$stdId)
-         let stdShow = element[10] + " " + element[6]+element[7]+ " " + element[8]
+         let stdShow = element[1] + "/" + element[2] + " " + element[10] + " " + element[6]+element[7]+ " " + element[8]
          $("#stdShow").html(stdShow)
       }
    })
