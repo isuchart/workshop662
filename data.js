@@ -141,6 +141,9 @@ let pageSet = '<label for="item5">ใบงาน/หน้า</label>'
     pageSet += '<option value="หน้า 7">หน้า 7</option>'
     pageSet += '<option value="หน้า 11">หน้า 11</option>'
     pageSet += '<option value="หน้า 28">หน้า 28</option>'
+    pageSet += '<option value="หน้า 35">หน้า 35</option>'
+    pageSet += '<option value="หน้า 37">หน้า 37</option>'
+    pageSet += '<option value="หน้า 38">หน้า 38</option>'
     pageSet += '</select>'
 
 //ชั้น
