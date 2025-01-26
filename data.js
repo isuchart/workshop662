@@ -17,19 +17,21 @@ topic48 += '<option value="ฟังก์ชัน">set</option>';
 topic48 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 
 let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic410 += '<option value="เซต">เซต</option>';
-topic410 += '<option value="จำนวนจริง">จำนวนจริง</option>';
-topic410 += '<option value="ตรรกศาสตร์">ตรรกศาสตร์</option>';
+topic410 += '<option value="เลขยกกำลัง">เลขยำกำลัง</option>';
+// topic410 += '<option value="จำนวนจริง">จำนวนจริง</option>';
+// topic410 += '<option value="ตรรกศาสตร์">ตรรกศาสตร์</option>';
 //topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
 //topic410 += '<option value="ภาคตัดกรวย">ภาคตัดกรวย</option>';
 
 let topic5 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic5 += '<option value="ลำดับ">ลำดับ</option>';
-topic5 += '<option value="อนุกรม">อนุกรม</option>';
-topic5 += '<option value="ค่าของเงิน">ค่าของเงิน</option>';
-topic5 += '<option value="ฟังก์ชันตรีโกณมิติ">ฟังก์ชันตรีโกณมิติ</option>';
-topic5 += '<option value="เมตริกซ์">เมตริกซ์</option>';
-topic5 += '<option value="เวคเตอร์ในระบบ 3 มิติ">เวคเตอร์ในระบบ 3 มิติ</option>';
+topic5 += '<option value="หลักการนับ">หลักการนับ</option>';
+topic5 += '<option value="ความน่าจะเป็น">ความน่าจะเป็น</option>';
+// topic5 += '<option value="ลำดับ">ลำดับ</option>';
+// topic5 += '<option value="อนุกรม">อนุกรม</option>';
+// topic5 += '<option value="ค่าของเงิน">ค่าของเงิน</option>';
+// topic5 += '<option value="ฟังก์ชันตรีโกณมิติ">ฟังก์ชันตรีโกณมิติ</option>';
+// topic5 += '<option value="เมตริกซ์">เมตริกซ์</option>';
+// topic5 += '<option value="เวคเตอร์ในระบบ 3 มิติ">เวคเตอร์ในระบบ 3 มิติ</option>';
 
 let kind4 =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind4 += '<option value="ใบงาน">ใบงาน</option>';
