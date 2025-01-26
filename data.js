@@ -252,6 +252,9 @@ $item4.on("change", () => {
     if (lv == "ม.5" && tp == "หลักการนับ" && ty == "สอบออนไลน์") {
         $iditem5.append(countOnline);
     }
+    if (lv == "ม.5" && tp == "ความน่าจะเป็น" && ty == "สอบออนไลน์") {
+        $iditem5.append(propOnline);
+    }
 
     if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
         $iditem5.append(sectionFx);
