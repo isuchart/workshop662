@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbzRt_SdL4R65GSisBB3Mdc1Rez_Ga1LW4llnuJUQTSy6OA4_I94UBfl0oQtMC7kYdlo/exec"; //Change API URL 
+const url = "https://script.google.com/macros/s/AKfycby4ZSTyNrY9LhFMkIHuZmYu-0wU3fo8FMJFugbZGkDYNzsdD6MbuhPzcYyXEUXrweIz_A/exec"; //Change API URL 
     //อ่านข้อมูลจาก API
     //chatGPT
     fetch(url)
