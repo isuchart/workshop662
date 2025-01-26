@@ -35,7 +35,7 @@ topic5 += '<option value="ความน่าจะเป็น">ความ�
 
 let kind4 =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind4 += '<option value="สอบออนไลน์">สอบออนไลน์</option>';
-// kind4 += '<option value="ใบงาน">ใบงาน</option>';
+kind4 += '<option value="ใบงาน">ใบงาน</option>';
 // kind4 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
 let kind5 =  '<option value="#" selected disabled>เลือกประเภท</option>';
