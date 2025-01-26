@@ -43,9 +43,9 @@ kind5 += '<option value="สอบออนไลน์">สอบออนไ�
 // kind5 += '<option value="ใบงาน">ใบงาน</option>';
 //kind5 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
-let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionCount = '<label for="item5">รายการ</label>'
     sectionCount += '<select class="form-select" name="item5" id="item5" required>'
-    sectionCount += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionCount += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionCount += '<option value="ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ">ฝึกทักษะเกี่ยวกับหลักการบวกและหลักการคูณ</option>'
     sectionCount += '<option value="ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล">ฝึกทักษะคำนวณเกี่ยวกับแฟกทอเรียล</option>'
     sectionCount += '<option value="ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล">ฝึกทักษะแก้สมการเกี่ยวกับแฟกทอเรียล</option>'
@@ -58,9 +58,9 @@ let sectionCount = '<label for="item5">ใบงาน/หน้า</label>'
     sectionCount += '<option value="โจทย์ปัญหาการจัดหมู่">โจทย์ปัญหาการจัดหมู่</option>'
     sectionCount += '</select>'
 
-let sectionSequence = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionSequence = '<label for="item5">รายการ</label>'
     sectionSequence += '<select class="form-select" name="item5" id="item5" required>'
-    sectionSequence += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionSequence += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 1 ความหมายชองลำดับ">แบบฝึกหัดที่ 1 ความหมายชองลำดับ</option>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1">แบบฝึกหัดที่ 2.1 ลำดับเลขคณิต1</option>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2">แบบฝึกหัดที่ 2.2 ลำดับเลขคณิต2</option>'
@@ -75,9 +75,9 @@ let sectionSequence = '<label for="item5">ใบงาน/หน้า</label>'
     sectionSequence += '<option value="แบบฝึกหัดที่ 2.11 ลำดับเลขคณิต11">แบบฝึกหัดที่ 2.11 ลำดับเลขคณิต11</option>'
     sectionSequence += '</select>'
     
-let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionProp = '<label for="item5">รายการ</label>'
     sectionProp += '<select class="form-select" name="item5" id="item5" required>'
-    sectionProp += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionProp += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionProp += '<option value="SampleSpace">SampleSpace</option>'
     sectionProp += '<option value="สื่อลูกเต๋า">สื่อลูกเต๋า</option>'
     sectionProp += '<option value="ไพ่ 1 สำรับ">ไพ่ 1 สำรับ</option>'
@@ -87,9 +87,9 @@ let sectionProp = '<label for="item5">ใบงาน/หน้า</label>'
     sectionProp += '</select>'
 
     
-let sectionFx = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionFx = '<label for="item5">รายการ</label>'
     sectionFx += '<select class="form-select" name="item5" id="item5" required>'
-    sectionFx += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionFx += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionFx += '<option value="ผลคูณคาร์ทีเชียน">ผลคูณคาร์ทีเชียน</option>'
     sectionFx += '<option value="ความสัมพันธ์1">ความสัมพันธ์1</option>'
     sectionFx += '<option value="ความสัมพันธ์สู่ฟังก์ชัน">ความสัมพันธ์สู่ฟังก์ชัน</option>'
@@ -107,9 +107,9 @@ let sectionFx = '<label for="item5">ใบงาน/หน้า</label>'
     sectionFx += '<option value="ค่าของฟังก์ชัน_f(x)_g(x)">ค่าของฟังก์ชัน_f(x)_g(x)</option>'
     sectionFx += '</select>'
 
-let sectionExpo = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionExpo = '<label for="item5">รายการ</label>'
     sectionExpo += '<select class="form-select" name="item5" id="item5" required>'
-    sectionExpo += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionExpo += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionExpo += '<option value="เลขยกกำลัง1">เลขยกกำลัง1</option>'
     sectionExpo += '<option value="เลขยกกำลัง2">เลขยกกำลัง2</option>'
     sectionExpo += '<option value="เลขยกกำลัง3">เลขยกกำลัง3</option>'
@@ -120,9 +120,9 @@ let sectionExpo = '<label for="item5">ใบงาน/หน้า</label>'
     sectionExpo += '<option value="รากที่ n ของจำนวน">รากที่ n ของจำนวน</option>'
     sectionExpo += '</select>'
 
-let sectionSet = '<label for="item5">ใบงาน/หน้า</label>'
+let sectionSet = '<label for="item5">รายการ</label>'
     sectionSet += '<select class="form-select" name="item5" id="item5" required>'
-    sectionSet += '<option value="#" selected disabled>เลือกใบงาน</option>'
+    sectionSet += '<option value="#" selected disabled>เลือกรายการ</option>'
     sectionSet += '<option value="ใบงานที่ 1 สมาชิกและจำนวนสมาชิกของเซต">ใบงานที่ 1 สมาชิกและจำนวนสมาชิกของเซต</option>'
     sectionSet += '<option value="ใบงานที่ 2 เซตจำกัดเซตอนันต์">ใบงานที่ 2 เซตจำกัดเซตอนันต์2</option>'
     sectionSet += '<option value="ใบงานที่ 3 สับเซตกับสมาชิก">ใบงานที่ 3 สับเซตกับสมาชิก</option>'
@@ -133,12 +133,12 @@ let sectionSet = '<label for="item5">ใบงาน/หน้า</label>'
     //sectionSet += '<option value="รากที่ n ของจำนวน">รากที่ n ของจำนวน</option>'
     sectionSet += '</select>'
 
-let page = '<label for="item5">ใบงาน/หน้า</label>'
+let page = '<label for="item5">รายการ</label>'
     page += '<input type="tel" class="form-control" id="item5" name="item5" placeholder="พิมพ์เลขหน้า, ปก = 0" required />'
 
-let pageSet = '<label for="item5">ใบงาน/หน้า</label>'
+let pageSet = '<label for="item5">รายการ</label>'
     pageSet += '<select class="form-select" name="item5" id="item5" required>'
-    pageSet += '<option value="#" selected disabled>เลือกหน้า</option>'
+    pageSet += '<option value="#" selected disabled>เลือกรายการ</option>'
     pageSet += '<option value="หน้าปก">หน้าปก</option>'
     pageSet += '<option value="หน้า 3">หน้า 3</option>'
     pageSet += '<option value="หน้า 5">หน้า 5</option>'
@@ -150,6 +150,21 @@ let pageSet = '<label for="item5">ใบงาน/หน้า</label>'
     pageSet += '<option value="หน้า 38">หน้า 38</option>'
     pageSet += '<option value="หน้า 43">หน้า 43</option>'
     pageSet += '</select>'
+
+let pageExpo = '<label for="item5">รายการ</label>'
+    pageExpo += '<select class="form-select" name="item5" id="item5" required>'
+    pageExpo += '<option value="#" selected disabled>เลือกรายการ</option>'
+    pageExpo += '<option value="Expo1">Expo1</option>'
+    pageExpo += '<option value="expo2">expo2</option>'
+    pageExpo += '<option value="หน้า 5">หน้า 5</option>'
+    pageExpo += '<option value="หน้า 7">หน้า 7</option>'
+    pageExpo += '<option value="หน้า 11">หน้า 11</option>'
+    pageExpo += '<option value="หน้า 28">หน้า 28</option>'
+    pageExpo += '<option value="หน้า 35">หน้า 35</option>'
+    pageExpo += '<option value="หน้า 37">หน้า 37</option>'
+    pageExpo += '<option value="หน้า 38">หน้า 38</option>'
+    pageExpo += '<option value="หน้า 43">หน้า 43</option>'
+    pageExpo += '</select>'
 
 //ชั้น
 $item1 = $("#item1");
@@ -206,7 +221,7 @@ $item4.on("change", () => {
     var cl = $item2.val() //ห้อง
     var tp = $item3.val() //เรื่อง
     var ty = $item4.val() //ประเภท
-    var sh = $item5.val() //ใบงาน/หน้า
+    var sh = $item5.val() //รายการ
     let m4 = $item1.val() + $item2.val();
     console.log(lv,tp,ty)
     $iditem5.empty();
@@ -238,7 +253,7 @@ $item4.on("change", () => {
     }
 
     if (m4 == "ม.410" && tp == "เซต" && ty == "เล่มเอกสาร") {
-        $iditem5.append(pageSet);
+        $iditem5.append(pageExpo);
     }
     
     if (m4 == "ม.410" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
@@ -254,7 +269,7 @@ $item4.on("change", () => {
         $iditem5.append(page);
     }
     if (m4 == "ม.410" && tp == "เลขยกกำลัง" && ty == "สอบออนไลน์") {
-        $iditem5.append(pageSet);
+        $iditem5.append(pageExpo);
     }
     if (m4 == "ม.410" && tp == "เรขาคณิตวิเคราะห์พื้นฐาน" && ty == "เล่มเอกสาร") {
         $iditem5.append(page);
