@@ -166,6 +166,21 @@ let pageExpo = '<label for="item5">รายการ</label>'
     pageExpo += '<option value="หน้า 43">หน้า 43</option>'
     pageExpo += '</select>'
 
+let countOnline = '<label for="item5">รายการ</label>'
+    countOnline += '<select class="form-select" name="item5" id="item5" required>'
+    countOnline += '<option value="#" selected disabled>เลือกรายการ</option>'
+    countOnline += '<option value="หลักการนับ1">หลักการนับ1</option>'
+    countOnline += '<option value="หลักการนับ2">หลักการนับ2</option>'
+    countOnline += '<option value="หลักการนับ3">หลักการนับ3</option>'
+    countOnline += '<option value="หลักการนับ4">หลักการนับ4</option>'
+    countOnline += '<option value="หลักการนับ5">หลักการนับ5</option>'
+    countOnline += '<option value="หลักการนับ6">หลักการนับ6</option>'
+    countOnline += '<option value="หลักการนับ7">หลักการนับ7</option>'
+    // countOnline += '<option value="หน้า 37">หน้า 37</option>'
+    // countOnline += '<option value="หน้า 38">หน้า 38</option>'
+    // countOnline += '<option value="หน้า 43">หน้า 43</option>'
+    countOnline += '</select>'
+
 //ชั้น
 $item1 = $("#item1");
 $item1.append(level);
@@ -233,6 +248,9 @@ $item4.on("change", () => {
     }
     if (lv == "ม.5" && tp == "ลำดับ" && ty == "ใบงาน") {
         $iditem5.append(sectionSequence);
+    }
+    if (lv == "ม.5" && tp == "หลักการนับ" && ty == "สอบออนไลน์") {
+        $iditem5.append(countOnline);
     }
 
     if (m4 == "ม.48" && tp == "ฟังก์ชัน" && ty == "ใบงาน") {
