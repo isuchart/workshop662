@@ -40,7 +40,7 @@ kind4 += '<option value="ใบงาน">ใบงาน</option>';
 
 let kind5 =  '<option value="#" selected disabled>เลือกประเภท</option>';
 kind5 += '<option value="สอบออนไลน์">สอบออนไลน์</option>';
-// kind5 += '<option value="ใบงาน">ใบงาน</option>';
+kind5 += '<option value="ใบงาน">ใบงาน</option>';
 //kind5 += '<option value="เล่มเอกสาร">เล่มเอกสาร</option>';
 
 let sectionCount = '<label for="item5">รายการ</label>'
