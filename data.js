@@ -17,7 +17,7 @@ topic48 += '<option value="ฟังก์ชัน">set</option>';
 topic48 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 
 let topic410 = '<option value="#" selected disabled>เลือกเรื่อง</option>';
-topic410 += '<option value="เลขยกกำลัง">เลขยำกำลัง</option>';
+topic410 += '<option value="เลขยกกำลัง">เลขยกกำลัง</option>';
 // topic410 += '<option value="จำนวนจริง">จำนวนจริง</option>';
 // topic410 += '<option value="ตรรกศาสตร์">ตรรกศาสตร์</option>';
 //topic410 += '<option value="ฟังก์ชันExpo">ฟังก์ชันExpo</option>';
